@@ -20,14 +20,14 @@ export class Details {
   tab1 = Tab1;
   tab2 = Tab2;
   tab3 = Tab3;
-  empDetails:any;
+  patientDetails:any;
   
   showData(){
 	console.info(this.navParams); 
   }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 	this.showData(); 
-	this.empDetails = navParams;
+	this.patientDetails = navParams;
   }
 
   /*ionViewDidLoad() {

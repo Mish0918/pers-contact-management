@@ -16,18 +16,13 @@
 		<ion-avatar item-left>
 		  <img src="img/bg1.png">
 		</ion-avatar>
-		<h1 text-wrap>{{employee.EmpName}}</h1>
-		<p>{{employee.Grade}}</p>
-		<p>{{employee.ResourceCurrentStatus}}</p>
+		<h1 text-wrap>{{patient.PatientName}}</h1>
+		<p>{{patient.Grade}}</p>
 	  </ion-item>
 	  
 	  <ion-card-content>
-		<p padding-top><b>Account:</b> {{employee.Accountname}}</p>
-		<p padding-top><b>Project:</b> {{employee.ProjectName}}</p>
-		<p padding-top><b>Project Id:</b> {{employee.PID}}</p>
-		<p padding-top><b>Project Manager:</b> {{employee.ProjectManager}}</p>
-		<p padding-top><b>Allocation Start Date:</b> {{employee.AllocationStartDate}}</p>
-		<p padding-top><b>Allocation End Date:</b> {{employee.Allocationenddate}}</p>
+			<p padding-top><b>Cancer Type:</b> {{patient.CancerType}}</p>
+		  <p padding-top><b>Consultant Radiologist:</b> {{patient.ConsultantName}}</p>
 	  </ion-card-content>
 	</ion-card>
 

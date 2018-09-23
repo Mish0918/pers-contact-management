@@ -13,18 +13,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tab1.html',
 })
 export class Tab1 {
-  employee:any;
+  patient:any;
   adjustDetails(){
 	console.info(this.navParams);
 	let key = null;
-	for(key in this.employee){
-		if(this.employee[key] == ""){
-			this.employee[key] = "NA"
+	for(key in this.patient){
+		if(this.patient[key] == ""){
+			this.patient[key] = "NA"
 		}
 	}
   }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-	  this.employee = navParams.data.item;
+	  this.patient = navParams.data.item;
 	  this.adjustDetails();
   }
 

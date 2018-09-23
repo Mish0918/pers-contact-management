@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Employee</ion-title>
+    <ion-title>Patient</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +15,8 @@
 
 <ion-content padding>
 	<ion-tabs class="tabs-basic" color="primary">
-	  <ion-tab tabIcon="ios-person" tabTitle="Employee" [root]="tab1" [rootParams]=empDetails></ion-tab>
-	  <ion-tab tabIcon="ios-pricetags" tabTitle="Tagging" [root]="tab2" [rootParams]=empDetails></ion-tab>
-	  <ion-tab tabIcon="ios-globe" tabTitle="BU" [root]="tab3" [rootParams]=empDetails></ion-tab>
+	  <ion-tab tabIcon="ios-person" tabTitle="Patient" [root]="tab1" [rootParams]=patientDetails></ion-tab>
+	  <ion-tab tabIcon="ios-medkit" tabTitle="Consultant" [root]="tab2" [rootParams]=patientDetails></ion-tab>
+	  <ion-tab tabIcon="ios-globe" tabTitle="BU" [root]="tab3" [rootParams]=patientDetails></ion-tab>
 	</ion-tabs>
 </ion-content>

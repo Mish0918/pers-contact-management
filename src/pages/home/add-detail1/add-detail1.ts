@@ -15,17 +15,13 @@ import {AddDetail2} from '../add-detail2/add-detail2';
   entryComponents:[ AddDetail2, ]
 })
 export class AddDetail1 {
-	empName:any = "";
-	empId:any = "";
-	empEmail:any = "";
+	patientName:any = "";
+	patientId:any = "";
 	grade:any = "";
-	level:any = "";
-	empLocation:any = "";
-	skill:any = "";
-	isFresher:any = "";
-	hireDate:any = "";
-	empAge:any = "";
-	empAgeBucket:any = "";
+	patientLocation:any = "";
+	admissionDate:any = "";
+	patientAge:any = "";
+	patientAgeBracket:any = "";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 	  
   }
@@ -36,21 +32,17 @@ export class AddDetail1 {
   
   public saveEmpDetails(){
 
-	this.navParams.data.newObj.EmpName = this.empName;
-	this.navParams.data.newObj.EmpId = this.empId;
-	this.navParams.data.newObj.EmailID = this.empEmail;
+	this.navParams.data.newObj.PatientName = this.patientName;
+	this.navParams.data.newObj.PatientId = this.patientId;
 	this.navParams.data.newObj.Grade = this.grade;
-	this.navParams.data.newObj.Level = this.level;
-	this.navParams.data.newObj.Location = this.empLocation;
-	this.navParams.data.newObj.PrimarySkills = this.skill;
-	this.navParams.data.newObj.Fresher = this.isFresher;
-	this.navParams.data.newObj.HireDate = this.hireDate;
-	this.navParams.data.newObj.Age = this.empAge;
-	this.navParams.data.newObj.AgeBucket = this.empAgeBucket;
-	if(this.hireDate != undefined && this.hireDate != ""){
-		this.hireDate = this.hireDate.replace(/-/g, "/");
+	this.navParams.data.newObj.Location = this.patientLocation;
+	this.navParams.data.newObj.AdmissionDate = this.admissionDate;
+	this.navParams.data.newObj.Age = this.patientAge;
+	this.navParams.data.newObj.AgeBracket = this.patientAgeBracket;
+	if(this.admissionDate != undefined && this.admissionDate != ""){
+		this.admissionDate = this.admissionDate.replace(/-/g, "/");
 	}
-	this.navParams.data.newObj.HireDate = this.hireDate;
+	this.navParams.data.newObj.HireDate = this.admissionDate;
 	
 	console.info(this.navParams);
 	this.navCtrl.push(AddDetail2, {newObj: this.navParams.data.newObj});

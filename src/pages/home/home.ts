@@ -51,31 +51,15 @@ export class HomePage {
 	
 	public showAddPage(){
 			let newResource = {
-		    "EmpId": "",
-            "EmpName": "",
-            "EmailID": "",
-            "Level": "",
+		    "PatientId": "",
+            "PatientName": "",
             "Grade": "",
             "Location": "",
-            "Fresher": "",
-            "HireDate": "",
-            "Practice": "Mobile/UI/UX",
-            "ServiceLine": "Mobile",
-            "SubPractice": "Mobile",
-            "PrimarySkills": "",
-            "PID": "",
-            "ProjectName": "",
-            "ProjectManager": "",
-            "Accountname": "",
-            "AllocationStartDate": "",
-            "Allocationenddate": "",
-            "ResourceCurrentStatus": "",
-            "FTE": "1",
-            "DeliveryBU": "",
-            "DeliveryRegion": "",
-            "SectorCountry": "",
+			"AdmissionDate": "",
+			"CancerType": "",
+            "ConsultantName": "",
             "Age": "",
-            "AgeBucket": ""
+            "AgeBracket": ""
 		};
 		this.navCtrl.push(AddDetail1,{newObj:newResource});
 	}
@@ -88,7 +72,7 @@ export class HomePage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.listItems = this.listItems.filter((item) => {
-		if(item.EmpName.toLowerCase().indexOf(val) > -1 || item.EmpId.indexOf(val) > -1 || item.Location.toLowerCase().indexOf(val) > -1 || item.Grade.toLowerCase().indexOf(val) > -1 || item.PrimarySkills.toLowerCase().indexOf(val) > -1 || item.ResourceCurrentStatus.toLowerCase().indexOf(val) > -1){
+		if(item.PatientName.toLowerCase().indexOf(val) > -1 || item.PatientId.indexOf(val) > -1 || item.Location.toLowerCase().indexOf(val) > -1 || item.Grade.toLowerCase().indexOf(val) > -1 ){
 			return item;
 		 }
 		 else{
