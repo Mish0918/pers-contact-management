@@ -7,6 +7,7 @@
             "AdmissionDate": "2014/01/07",
             "CancerType": "",
             "ConsultantName": "Dr. Raghav Raj",
+            "CounsellorName": "Ajit Mahatre",
             "Age": "4",
             "AgeBracket": "1-5"
         },
@@ -18,6 +19,7 @@
             "AdmissionDate": "2014/01/15",
             "CancerType": "",
             "ConsultantName": "Dr. Jitendra Sanyal",
+            "CounsellorName": "Surveen Duggal",
             "Age": "6",
             "AgeBracket": "5-10"
         },
@@ -29,6 +31,7 @@
             "AdmissionDate": "2014/02/25",
             "CancerType": "",
             "ConsultantName": "Dr. Raghav Raj",
+            "CounsellorName": "Janhavi Deshmukh",
             "Age": "6",
             "AgeBracket": "5-10"
         },
@@ -40,6 +43,7 @@
             "AdmissionDate": "2014/02/25",
             "CancerType": "",
             "ConsultantName": "Dr. Raghav Raj",
+            "CounsellorName": "Janhavi Deshmukh",
             "Age": "8",
             "AgeBracket": "5-10"
         },
@@ -51,6 +55,7 @@
             "AdmissionDate": "2014/03/05",
             "CancerType": "",
             "ConsultantName": "Dr. Raghav Raj",
+            "CounsellorName": "Ajit Mahatre",
             "Age": "7",
             "AgeBracket": "5-10"
         },
@@ -62,6 +67,7 @@
             "AdmissionDate": "2014/03/15",
             "CancerType": "",
             "ConsultantName": "Dr. Jitendra Sanyal",
+            "CounsellorName": "Tarunjeet Middha",
             "Age": "6",
             "AgeBracket": "5-10"
         }
