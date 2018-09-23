@@ -1,0 +1,35 @@
+<!--
+  Generated template for the Tab3 page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-card>
+
+	  <ion-item>
+		<ion-avatar item-left>
+		  <img src="img/bg1.png">
+		</ion-avatar>
+		<h1 text-wrap>{{employee.EmpName}}</h1>
+		<p>{{employee.Grade}}</p>
+		<p>{{employee.ResourceCurrentStatus}}</p>
+	  </ion-item>
+	  
+	  <ion-card-content>
+		<p padding-top><b>Delivery BU:</b> {{employee.DeliveryBU}}</p>
+		<p padding-top><b>Delivery Reigon:</b> {{employee.DeliveryRegion}}</p>
+		<p padding-top><b>FTE:</b> {{employee.FTE}}</p>
+		<p padding-top><b>Practice:</b> {{employee.Practice}}</p>
+		<p padding-top><b>Sub Practice:</b> {{employee.SubPractice}}</p>
+		<p padding-top><b>Service Line:</b> {{employee.ServiceLine}}</p>
+		<p padding-top><b>Sector/Country:</b> {{employee.SectorCountry}}</p>
+	  </ion-card-content>
+	</ion-card>
+
+</ion-content>

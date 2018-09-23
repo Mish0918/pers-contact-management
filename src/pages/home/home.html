@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+	<ion-grid>
+	<ion-row>
+	<ion-col col-10>
+    <ion-title text-center class="title">
+      Resources
+    </ion-title>
+	</ion-col>
+	<ion-col>
+	<ion-icon name="ios-add-outline" (click)="showAddPage()"></ion-icon>
+	</ion-col>
+	</ion-row>
+	</ion-grid>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+	<ion-item *ngFor="let items of listItems" (click)="itemSelected(items)">
+		<ion-avatar item-left>
+			<img src="img/bg1.png">
+		</ion-avatar>
+		{{items.EmpName}}
+		<p padding-top>{{items.EmpId}}</p>
+	</ion-item>
+  </ion-list>
+</ion-content>
